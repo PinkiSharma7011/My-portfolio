@@ -4,30 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        body {font-family:arial; margin:0;background-color: #BDD9BF;}
-        header{background-color:#2E4052 ; color:white; padding:20px; text-align:center;}
-        .card{background: #be984c ; margin:20px; padding:20px;border-radius: 10px;}
-        button{background: rgb(13, 11, 11);color:white; padding:10px 20px; border:none; border-radius: 5px;}
-
-    </style>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
 </head>
 <body>
-    <header>
-        <h1>Hi,I am pinki Sharma 👋</h1>
-        <p>Learning HTML,CSS,Javascript Python,DBM</p>
-</header>
-<div class="card">
-    <h2>About Me</h2>
-    <p> I am from Noida, and now i am learning web develoment</p>
+    <div id="container">
+     <img src="https://images.unsplash.com/photo-1708405822631-f0fc9696c762?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fGdsYXNzbW9ycGhpc218ZW58MHx8MHx8fDA%3D" style="height:850px;width:150vh; ">
+<div class="box">
+    <div class="iconbox">
+        <!-- <i class="fa-solid fa-cloud-sun" id="cloud"></i> -->
+        <h1 id="wea">⛅️Weather</h1>
+        <div class="right-icons">
+        <i class="fa-solid fa-location-dot" id="location"></i>
+        <i class="fa-regular fa-bell" id="bell"></i>
+       <i class="fa-solid fa-circle-user" id="C-User"></i>
+       </div>
     </div>
-    <div class="card">
-        <h2>My Skills</h2>
-        <p> THML,CSS,Javascript,Python,DBMS ,Git & GitHub</p>
-    </div>
-        <div class="card">
-            <h2>Contect</h2>
-            <button onclick="alert('Thank you!')">Contect Me</button>
+    <div class="search area" > 
+        <input placeholder="Search for city..."  id="btn"><button id="btn2">Sarech</button>
         </div>
+        <div class="mainsection">
+            <div class="head" >
+            <h4 id="head2"><i class="fa-solid fa-location-dot" id="l-dot"></i> hanoi,Vietnam</h4>
+            <p id="para">   Thursday,17 semt 2027.Sunny & Clear</p>
+            <h1 id="heading">   32&deg;C</h1>
+            <div class="sun">☀️</div>
+            </div>
+            <div class="box--">
+                <div id="box1" >
+                    <div id="innerdiv" style="margin:2px;">
+                    <p><i class="fa-solid fa-droplet" style="font-size: 27px; color:rgb(45, 161, 233);margin-bottom:3px; "></i></p>
+                    <h4 style="color:rgb(11, 11, 45); margin-bottom:1px; margin-top:3px;">Humidity</h4>
+                    <p style="font-size:25px ;padding: 0%; font-weight:bold; margin-top: 2px;" >45%</p>
+                    </div>
+                </div>
+                <div id="box2">
+                    <p><i class="fa-solid fa-wind" style="font-size: 26px; color:rgb(44, 137, 188);margin-top: 0px; gap:0px;"></i></p>
+                    <h4 style="margin:2px;padding:2px; margin-bottom:3px;">Wind</h4>
+                    <p style="font-size:20px ;padding: 0%; font-weight:bold; margin-bottom: 0px; margin-top:2px;">12 Km/h</p>
+                </div>
+                <div id="box3">
+                    <i class="fa-solid fa-temperature-three-quarters" style="font-size: 30px; color:rgb(44, 137, 188); margin-top:13px; margin-bottom:0px;"></i>
+                    <h4 style="margin-top:15px; margin-bottom:5px;">Feels like</h4>
+                    <p style="font-size:25px ;padding: 0%; font-weight:bold; margin-top: 0px;">34&deg;</p>
+                </div>
+            </div>
+        </div>
+<H5 id="day">5-Day FORECAST</H5>
+<div class="footer">
+    <div id="footer1" >
+        <h style="font-size:40px; margin-top: 2px;">☀️</h>
+        <p style="margin-top:0px;  margin-bottom:3px">Today</p>
+        <r style="margin-top:-3px; margin-bottom:3px ;font-size:15px;">32&deg;/24&deg;</r>
+    </div>
+    <div id="footer2" >
+        <h style="font-size:40px; margin-top: 2px;">⛅️</h>
+        <p style="margin-top:0px;  margin-bottom:3px">Fri</p>
+        <r style="margin-top:-3px; margin-bottom:3px ;font-size:15px;">29&deg;/22&deg;</r>
+    </div>
+<div  id="footer3">
+    <h style="font-size:40px; margin-top: 2px;">🌧️</h>
+        <p style="margin-top:0px;  margin-bottom:3px">Sat</p>
+        <r style="margin-top:-3px; margin-bottom:3px ;font-size:15px;">26&deg;/20&deg;</r>
+</div>
+<div  id="footer4">
+    <h style="font-size:40px; margin-top: 2px;">☀️</h>
+        <p style="margin-top:0px;  margin-bottom:3px">Sun</p>
+        <r style="margin-top:-3px; margin-bottom:3px ;font-size:15px;">30&deg;/22&deg;</r>
+</div>
+    <div id="footer5">
+        <h style="font-size:40px; margin-top: 2px;">☀️</h>
+        <p style="margin-top:0px;  margin-bottom:3px">mon</p>
+        <r style="margin-top:-3px; margin-bottom:3px ;font-size:15px;">31&deg;/24&deg;</r>
+    </div>
+</div>
+</div>
+     </div>
+     
+</body>
+
 </body>
 </html>
